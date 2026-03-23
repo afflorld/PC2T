@@ -10,7 +10,7 @@ make??
 
 ## Summary
 
-- [X] Přidání zaměstnance – uživatel vybere skupinu, zadá jméno, příjmení a rok narození. ID je přiděleno automaticky.
+- [-] Přidání zaměstnance – uživatel vybere skupinu, zadá jméno, příjmení a rok narození. ID je přiděleno automaticky.
 - [-] Přidání spolupráce – uživatel zadá ID zaměstnance, ID kolegy a úroveň spolupráce.
 - [-] Odebrání zaměstnance – odstranění z databáze včetně všech vazeb.
 - [-] Vyhledání zaměstnance dle ID – výpis základních informací a statistik spolupráce.
