@@ -4,10 +4,10 @@
 To run this project use
 
 ```Zsh
-// To compile the project
+# To compile the project
 make compile
 
-// To run the project
+# To run the project
 make run
 ```
 
@@ -17,9 +17,9 @@ Předpokládejme databázi zaměstnanců technologické firmy. Každý zaměstna
 
 ### Skupiny zaměstnanců
 
-* a) Datoví analytici – dokážou určit, s kterých spolupracovníkem mají nejvíce společných spolupracovníků.
+* Datoví analytici – dokážou určit, s kterých spolupracovníkem mají nejvíce společných spolupracovníků.
 
-* b) Bezpečnostní specialisté – dokážou vyhodnotit rizikovost spolupráce na základě počtu spolupracovníků a průměrné kvality spolupráce a vypočítat rizikové skóre (vlastní algoritmus). 
+* Bezpečnostní specialisté – dokážou vyhodnotit rizikovost spolupráce na základě počtu spolupracovníků a průměrné kvality spolupráce a vypočítat rizikové skóre (vlastní algoritmus). 
 
 Pri přijetí do firmy je každý zaměstnanec zařazen do jedné skupiny a nelze jej později přesunout.
 
