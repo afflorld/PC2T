@@ -10,7 +10,7 @@ public abstract class Employee {
     private final Date dateOfBirth;
     private final int id;
 
-    ArrayList<Collab> collabs = new ArrayList<>();
+    ArrayList<Collab> collabs = new ArrayList<>(); // Employee's collab's list
 
     public Employee(String name, String surname, Date dateOfBirth, int id) {
         this.name = name;
@@ -18,6 +18,8 @@ public abstract class Employee {
         this.dateOfBirth = dateOfBirth;
         this.id = id;
     }
+
+    // helpful methods
 
     public String getName() {
         return name;

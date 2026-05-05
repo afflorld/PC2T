@@ -33,10 +33,10 @@ Pri přijetí do firmy je každý zaměstnanec zařazen do jedné skupiny a nelz
 - [X] Abecední výpis zaměstnanců podle příjmení ve skupinách.
 - [X] Statistiky – převažující kvalita spolupráce a zaměstnanec s nejvíce vazbami.
 - [X] Výpis počtu zaměstnanců ve skupinách.
-- [ ] Uložení zaměstnance do souboru.
-- [ ] Načtení zaměstnance ze souboru.
-- [ ] Uložení všech dat do SQL databáze při ukončení programu.
-- [ ] Načtení všech dat z SQL databáze při spuštění programu.
+- [X] Uložení zaměstnance do souboru.
+- [X] Načtení zaměstnance ze souboru.
+- [X] Uložení všech dat do SQL databáze při ukončení programu.
+- [X] Načtení všech dat z SQL databáze při spuštění programu.
 
 ### Požadavky na program
 Využití principů objektově orientovaného programování (OOP).

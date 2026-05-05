@@ -15,18 +15,19 @@ public class DataAnalytic extends Employee {
         int max = 0;
         int id = -1;
 
-        for(Collab c : this.collabs) {
+        for(Collab c : this.collabs) { // looping through all my collaps
 
             Employee collaborator = null;
 
-            for (Employee e : employees) {
+            for (Employee e : employees) { // looping through all employees in the company and checking if there are any that i collab with
                 if (e.getId() == c.getCollab().getId()) {
                     collaborator = e;
                     break;
                 }
             }
 
-            if (collaborator != null) {
+            // we go through all of his collabs and counting them if theyre in my collab's list too
+            if (collaborator != null) { // if we find a collaborator
                 int count = 0;
                 for (Collab c_c : collaborator.collabs) { // collaborator's collabs
                     for (Collab check_c : this.collabs) { // check if their in my collabs
@@ -36,7 +37,7 @@ public class DataAnalytic extends Employee {
                     }
                 }
 
-                if (count > max) {
+                if (count > max) { // if they're are just set the id and new max value
                     max = count;
                     id = collaborator.getId();
                 }
