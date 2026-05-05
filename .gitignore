@@ -59,3 +59,4 @@ database.txt
 *.str
 *.pb
 build/
+.idea/

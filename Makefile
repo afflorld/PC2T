@@ -2,22 +2,16 @@ MAIN_CLASS = Main
 SRC = src
 
 clean:
-	rm -rf *.cache/
-	rm -rf *.hw/
-	rm -rf *.ip_user_files/
-	rm -rf *.sim/
-	rm -rf *.runs/
-	rm -rf .Xil/
+	@echo "Čistím projekt..."
+	rm -rf *.cache/ *.hw/ *.ip_user_files/ *.sim/ *.runs/ .Xil/
 	rm -f *.log *.jou *.str *.pb
-	rm -rf build/
-	rm -rf out/
-	rm -rf target/
+	rm -rf build/ out/ target/
 	rm -f database.txt database.db
 	find . -name "*.iml" -type f -delete
 	find . -name "*.class" -type f -delete
 
 compile:
-	javac -d out -sourcepath src src/$(MAIN_CLASS).java
+	mvn compile
 
 run:
-	java -cp out $(MAIN_CLASS)
+	mvn exec:java -Dexec.mainClass="$(MAIN_CLASS)" -Dexec.args="--enable-native-access=ALL-UNNAMED"
