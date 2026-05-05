@@ -29,8 +29,8 @@ public class Main {
                 case "count": Options.printCounts(employees); break;
                 case "save": Filer.saveToFile(employees); break;
                 case "load": identifier = Filer.loadFromFile(employees); break;
-                case "loadsql": break;
-                case "exit": break;
+                case "loadsql": identifier = Database.loadFromSQL(employees); break;
+                case "exit": Database.saveToSQL(employees); break;
                 default: System.out.println("Invalid command."); break;
             }
         }
