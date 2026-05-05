@@ -27,8 +27,8 @@ public class Main {
                 case "list": Options.printAlpha(employees); break;
                 case "stats": Options.printStats(employees); break;
                 case "count": Options.printCounts(employees); break;
-                case "save": break;
-                case "load": break;
+                case "save": Filer.saveToFile(employees); break;
+                case "load": identifier = Filer.loadFromFile(employees); break;
                 case "loadsql": break;
                 case "exit": break;
                 default: System.out.println("Invalid command."); break;
